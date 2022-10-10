@@ -1,0 +1,30 @@
+@import 'normalize.css';
+@import url('https://use.typekit.net/waz4tsx.css');
+:root {
+    --primary: red;
+    --black: #000;
+    --text-color: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: ibm-plex-sans, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+html {
+    font-size: 62.5%;
+}
+button,
+input {
+    border: none;
+    outline: none;
+}
+a[href] {
+    text-decoration: none;
+    color: var(--text-color);
+}
