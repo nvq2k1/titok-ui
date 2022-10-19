@@ -1,0 +1,61 @@
+.wrapper {
+    border-radius: 4px;
+    min-width: 100px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 9px 16px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    user-select: none;
+    font-family: 'ProximaNova', sans-serif;
+
+    + .wrapper {
+        margin-left: 8px;
+    }
+    + .disable {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+.icon + .title,
+.title + .icon {
+    margin-left: 6px;
+}
+.rounded {
+    border-radius: 999px;
+    border-color: rgba(70, 71, 75, 0.5);
+    &:hover {
+        background-color: rgba(207, 208, 212, 0.5);
+    }
+}
+.primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    }
+}
+.outline {
+    border-color: var(--primary);
+    color: var(--primary);
+
+    &:hover {
+        background-color: rgba(254, 44, 85, 0.06);
+    }
+}
+.text {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.small {
+    min-width: 88px;
+    padding: 4px 0px;
+}
+.large {
+    min-width: 140px;
+    padding: 14px 16px;
+}
